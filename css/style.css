@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    width: 100%;
+    background-color: #F6F5EE;
+    height: 100%;
+}
+
+@font-face {
+    font-family: GT-Regular;
+    src: url(../font/GTWalsheimPro-Regular.woff);
+}
+
+@font-face {
+    font-family: GT-Bold;
+    src: url(../font/GTWalsheimPro-Black.woff);
+}
+
+html {
+    font-family:  GT-Regular;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: relative;
+}
+
+.logo--orange{
+    position: absolute;
+    left:740px;
+    top:299px;
+    height:50px;
+    width: 50px;
+}
+
+
+.logo{
+    margin-bottom: 40px;
+}
+
+p{
+    color: #0E393A;
+    font-weight: 700;
+}
+
+main{
+    display: flex;
+}
+
+.main__left-container{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    padding: 60px 180px 60px 140px;
+    position: relative;
+}
+
+.main__right-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color:#0E393A;
+    height: 100vh;
+    padding: 150px 20px 30px 20px;
+justify-content: space-between;
+
+}
+
+.right-container__first{
+display: flex;
+
+}
+
+.right-container__first--rectangle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+
+.right-container__second{
+ display: flex;
+ align-items: center;
+}
+
+.right-container__second--rectangle{
+    margin-left: 30px;
+}
+
+.right-container__third{
+    display: flex;
+}
+
+.right-container__third--rectangle{
+    width: 75%;
+}
+
+.third--rectangle__small{
+    margin-left: 100px;
+}
+
+.right-container__fourth{
+    width: 100%;
+    background-color:#FF8845;
+    padding: 30px 0px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center; 
+    font-weight: 700;   
+    border-radius:8px;
+}
+
+.right-container__app-stores{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.right-container__app-stores img{
+    width: 156px;
+    height: 44px;
+}
+
+.right-container__app-stores img:nth-of-type(1){
+    margin-right: 10px;
+}
+ 
+
+.left-container__logo--orange{
+    position:absolute;
+    top:70px;
+    left:157px
+}
+
+.left-container__logo--green{
+    margin-right: 25px;
+}
+
+.left-container__logo{
+    margin-bottom: 100px;
+}
+
+.smile{
+    position: absolute;
+    top: 285px;
+    left:580px;
+}
+
+.left-container__message{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.left-container__message img{
+    margin-bottom: 40px;
+}
+
+.left-container__names{
+    width: 70%;
+    border-radius:8px;
+    border: none;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    position:relative;
+    background-color: white;
+    margin-bottom: 35px;
+    display:flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    padding-left: 35px;
+
+   
+}
+ #room_name{
+    padding: 20px 0px 20px 20px;
+    border-radius:8px;
+    border: none;
+    font-family: GT-Regular;
+    outline: none;
+
+    
+}
+
+#chat_name{
+    padding: 20px 0px 20px 20px;
+    border-radius:8px;
+    border: none;
+    font-family: GT-Regular;
+    margin-right: 16px;
+    outline: none;
+
+} 
+
+
+#submit{
+    padding: 15px 36px;
+    border-radius:5px;
+    border: none;
+    background-color:#FF8845;
+    color:white;
+    font-family: GT-Regular;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+
+    outline: none;
+
+}
+
+
+.left-container__text p{
+    color: #0E393A;
+    font-size: 12px;
+}
+
+.left-container__text{
+    margin-bottom: 60px;
+}
+
+.users--img1{
+    position: absolute;
+    left: 175px;
+    z-index: 10;
+}
+
+.users--img2{
+    position: absolute;
+    left: 210px;
+    z-index: 20;
+}
+
+.users--img3{
+    position: absolute;
+    left: 245px;
+    z-index: 30;
+}
+
+.users--img4{
+    position: absolute;
+    left: 280px;
+    z-index: 40;
+}
+
+
+.left-container__users{
+    display: flex;
+    flex-direction: row;
+}
+
+.users--text{
+    display: flex;  
+    z-index: 60;
+    margin-left: 170px;
+    align-items: center;
+  
+}
+
+.users--text p{
+    color:black;
+    font-size:13px;
+}
+

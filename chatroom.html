@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privy</title>
+    <link rel="stylesheet" href="./css/chatroom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="main-container--left">
+
+            <div class="main-container--left__top">
+
+                <div class="main-container--left__top--text">
+                    <a href="/index.html"><img src="./img/back_arrow.png" width="26" height="26"></a>
+                    <h1 id="roomTitle">ChatRoom name</h1>
+                </div>
+
+                <div class="main-container--left__top--settings">
+                    <img src="./img/Vector.png" class="setting--button">
+                </div>
+            </div>
+
+            <div class="main-container--left__typing">
+                <p id="angela"><span id="typing">Angela</span> is typing...</p>
+            </div>
+
+            <hr>
+
+            <div class="main-container--left__users">
+                <img src="./img/Rectangle 6.png">
+                <img src="./img/Rectangle 7.png" class="users--img1">
+                <img src="./img/Rectangle 8.png" class="users--img2">
+                <img src="./img/Rectangle 9.png" class="users--img3">
+                <img src="./img/Rectangle 10.png"class="users--img4">
+                <div class="users--img6">17+</div>
+            </div>
+
+            <hr>
+
+
+            <div class="main-container--left__text-area">
+
+               <div id="messages">
+                <div class="text-area__first go " >Hello, how una de?</div>
+
+                <div class="text-area__second go disappear">Omo I de o
+                    <i class="bi bi-trash-fill" onclick="go()" id="delete" > </i>
+                </div>
+
+                <div class="text-area__third go ">So, how did your day go? Trust it went well?</div>
+
+                <div class="text-area__fourth go disappear">If not for God, sapa for don kill person
+                    <i class="bi bi-trash-fill" onclick="commot()" id="delete" > </i>
+                </div>
+            </div> 
+
+            <div class="newDiv2"></div>
+
+            </div>
+
+            <div class="main-container--left__text-field">
+                <img src="./img/emoji.png" class="emoji" onclick="tray()" onclick="goTray()">
+                <img src="./img/emoji-tray.png" class="emoji-tray">
+                <form class="form" id="form">
+                    <input type="text" id="text-field" placeholder="Type a message" required onkeypress="isTyping()">
+                    <input type="submit" value="Send Message" id="submit">
+                </form>
+            </div>
+
+
+        </div>
+
+
+        <div class="main-container--right">
+            <div class="main-container--right__initials"><strong id="chatTitle">cr</strong></div>
+            <hr>
+            <div class="main-container--right__group-info--text">group info</div>
+
+            <div class="main-container--right__group-info">
+                <div class="group-info--first">
+                    <h2>21</h2>
+                    <h5>Users Online</h5>
+                </div>
+
+                <div class="group-info--first">
+                    <h2>5</h2>
+                    <h5>Users Typing</h5>
+                </div>
+
+                <div class="group-info--first">
+                    <h2>7</h2>
+                    <h5>Links Shared</h5>
+                </div>
+            </div>
+            <hr>
+            <div class="main-container--right--settings">
+
+                <b>settings</b>
+
+
+                <div class="right--settings--chat-display">
+
+                    <div class="chat-display--hide">
+                        <input type="checkbox" class="hide" id="hide" onclick="hideChat()">
+                        <h6>Hide my chat</h6>
+                    </div>
+
+                    <div class="chat-display--delete">
+                        <input type="checkbox" class="delete-chat" id="delete-chat" onclick="deleteChat()">
+                        <h6>Delete all chat</h6>
+                    </div>
+
+                </div>
+
+                <div class="chat-display--timed">
+                    <div class="chat-display--timed-delete">
+                        <input type="checkbox" class="timed-delete"  onclick="timing()">
+                        <h6>Delete chat every <span id="timed-seconds"> 5 </span> seconds</h6>
+                    </div>
+                    <div class="timed-delete--buttons">
+                        <div class="timed-delete--buttons--increase" onclick="increase()">+</div>
+                        <div class="timed-delete--buttons--decrease" onclick="decrease()">-</div>
+
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+    </main>
+    <script src="./js/chat.js"></script>
+</body>
+</html>
