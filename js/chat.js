@@ -13,6 +13,11 @@ let textArea2 = document.querySelector(".text");
 let typing = document.querySelector("#typing");  
 let messages = document.querySelector("#messages");
 let deleteButton = document.querySelectorAll("#delete");
+let setting = document.querySelector(".setting--button");
+let setting2= document.querySelector(".setting--button2");
+let right = document.querySelector(".main-container--right");
+let left = document.querySelector(".main-container--left");
+
 // _____________________________________________________________________________________________________________
 
 
@@ -162,3 +167,13 @@ function timing(){
 
 // let d =new Date();
 // let n =
+
+setting.onclick = function(){
+    right.classList.toggle('active');
+    left.classList.toggle('active');
+};
+
+setting2.onclick = function(){
+    right.classList.toggle('active');
+    left.classList.toggle('active');
+};

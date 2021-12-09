@@ -277,9 +277,11 @@ h1{
     display: flex;
     background-color:white;
     flex:1;
-    height:100vh;
+    height: 741px;
     padding: 40px 70px;
     flex-direction: column;
+    position: relative;
+    transition: 0.5s;
 }
 
 .main-container--right__initials{
@@ -371,7 +373,7 @@ b{
 .chat-display--hide{
     transform: translate(-50%,-50%);
     position: absolute;
-    left: 1120px;
+    left: 400px;
     display: flex;
     align-items: center;
 
@@ -431,7 +433,7 @@ h6{
 .chat-display--delete{
     transform: translate(-50%,-50%);
     position: absolute;
-    left: 1350px;
+    left: 170px;
     display: flex;
     align-items: center;
 
@@ -494,7 +496,7 @@ h6{
 .chat-display--timed-delete{
     transform: translate(-50%,-50%);
     position: absolute;
-    left: 1170px;
+    left: 220px;
     display: flex;
     align-items: center;
     top: 630px;
@@ -569,7 +571,7 @@ h6{
     color: #FF8845; 
     position: absolute;
     top: 620px;
-    left: 1300px;
+    left: 340px;
     cursor: pointer;
 
 }
@@ -585,10 +587,70 @@ h6{
     color: #FF8845; 
     position: absolute;
     top: 620px;
-    left: 1340px;
+    left: 380px;
     cursor: pointer;
 }
 
 
 
+@media (max-width : 1024px){
+
+    .main-container--right{
+        display: none;
+        padding: 40px 15px ;
+
+    }
+    .main-container--left{
+        padding: 40px 15px ;
+      
+    }
+
+    .main-container--left__text-field{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+    }
+
+    #text-field{
+        width: 100%;
+    }
+
+    .emoji{
+        display: none;
+    }
+
+    .main-container--right.active{
+        left: 0;
+        display: block;
+    }
+    
+    .main-container--left.active{
+        display: none ;
+    }
+
+    .chat-display--timed-delete{
+        left: 160px;
+    }
+   
+    .timed-delete--buttons--increase{
+        left:280px;
+    }
+
+    .timed-delete--buttons--decrease{
+        left: 320px;
+    }
+
+    
+    .chat-display--delete{
+        left: 110px;
+    }
+
+    .chat-display--hide{
+        left: 290px
+    }
+    .main-container--right__initials{
+        margin-left:90px;
+    }
+
+}
 
