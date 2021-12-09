@@ -591,9 +591,16 @@ h6{
     cursor: pointer;
 }
 
+.setting--button2{
+    display: none;
+}
 
 
 @media (max-width : 1024px){
+
+    .setting--button2{
+        display: block;
+    }
 
     .main-container--right{
         display: none;

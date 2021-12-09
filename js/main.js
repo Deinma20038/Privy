@@ -17,7 +17,7 @@ function getInput(){
 function processData(e){
     e.preventDefault();
     getInput();
-    window.location.href = window.location.href.replace("index.html", "/pages/chatroom.html");
+    window.location.href = window.location.href.replace("index.html", "pages/chatroom.html");
 }
 
 form.addEventListener('submit', processData);
