@@ -1,6 +1,6 @@
 let load = document.querySelector(".loading");
 setInterval(function() {
-    load.style.display="none";}, 10500); 
+    load.style.display="none";}, 1500); 
 
 
 let form = document.querySelector(".form");
